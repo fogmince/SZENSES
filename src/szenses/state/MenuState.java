@@ -12,27 +12,37 @@ public class MenuState extends State {
 
     private MenuUI ui;
 
-    private UIButton test;
+    private UIButton search;
+    private UIButton favorites;
+    private UIButton settings;
+    private UIButton help;
 
     public MenuState(StateManager ms) {
         super(ms);
         ui = new MenuUI();
 
-        test = new UIButton(Sprite.buttonTest, new Vector2i(285 - 100, 400));
-        ui.addButton(test);
     }
 
     public void init() {
         ui = new MenuUI();
 
-        test = new UIButton(Sprite.buttonTest, new Vector2i(285 - 100, 400));
-        ui.addButton(test);
+        search = new UIButton(Sprite.buttonTest, new Vector2i(285 - 150, 250));
+        ui.addButton(search);
+
+        favorites = new UIButton(Sprite.buttonTest, new Vector2i(285 - 150, 320));
+        ui.addButton(favorites);
+
+        settings = new UIButton(Sprite.buttonTest, new Vector2i(285 - 150, 390));
+        ui.addButton(settings);
+
+        help = new UIButton(Sprite.buttonTest, new Vector2i(285 - 150, 460));
+        ui.addButton(help);
     }
 
     public void update() {
         ui.update();
 
-        if(test.isClicked()) System.out.println("HEJ");
+        if(search.isClicked()) System.out.println("HEJ");
     }
 
     public void render(Screen screen) {

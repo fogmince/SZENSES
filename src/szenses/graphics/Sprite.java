@@ -7,14 +7,10 @@ import java.io.IOException;
 
 public class Sprite {
 
-    private static final String itemPath = "/textures/items/";
-    private static final String uiPath = "/textures/ui/";
-    private static final String entityPath = "/textures/entity/";
-    private static final String particlePath = "/textures/entity/particle/";
-    private static final String projectilePath = "/textures/entity/projectile/";
+    private static final String button_path = "/textures/ui/button/";
 
 
-    public static final Sprite buttonTest = new Sprite("/textures/ui/button/test");
+    public static final Sprite buttonTest = new Sprite(button_path + "knapp");
 
     private String path;
     private int width, height;
