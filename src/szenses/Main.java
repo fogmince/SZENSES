@@ -10,7 +10,7 @@ import java.awt.image.*;
 
 public class Main extends Canvas implements Runnable {
 
-    public static final int WIDTH = 570, HEIGHT = 750;
+    public static final int WIDTH = 570, HEIGHT = 600;
     public static final String TITLE = "Szenses";
 
     private StateManager sm;

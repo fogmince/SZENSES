@@ -30,6 +30,14 @@ public class Screen {
         g.drawImage(sprite.getSprite(), x, y, null);
     }
 
+    public void renderBackgruondPaint(GradientPaint gp) {
+        Graphics2D g2 = (Graphics2D) g;
+
+        g2.setPaint(gp);
+
+        g2.fillRect(0, 0, Main.WIDTH, Main.HEIGHT);
+    }
+
     public void clear() {
         g.setColor(Color.black);
         g.fillRect(0, 0, Main.WIDTH, Main.HEIGHT);

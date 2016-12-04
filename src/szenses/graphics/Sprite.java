@@ -8,9 +8,16 @@ import java.io.IOException;
 public class Sprite {
 
     private static final String button_path = "/textures/ui/button/";
+    private static final String icon_path = "/textures/ui/icon/";
+
+    // UI
+    public static final Sprite buttonTest = new Sprite(button_path + "button");
+
+    public static final Sprite iconGlass = new Sprite(icon_path + "glass");
+    public static final Sprite iconGear = new Sprite(icon_path + "gear");
+    public static final Sprite iconstar = new Sprite(icon_path + "star");
 
 
-    public static final Sprite buttonTest = new Sprite(button_path + "knapp");
 
     private String path;
     private int width, height;
