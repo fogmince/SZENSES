@@ -9,11 +9,7 @@ import szenses.graphics.ui.components.UILabel;
 import szenses.graphics.ui.components.UISprite;
 import szenses.util.Vector2i;
 
-public class MenuUI {
-
-    private UIHandler handler;
-
-    private UISprite background;
+public class MenuUI extends UI {
 
     private UISprite glass;
     private UISprite star;
@@ -23,11 +19,6 @@ public class MenuUI {
     private UISprite title;
 
     public MenuUI() {
-        handler = new UIHandler();
-
-        background = new UISprite(new Vector2i(-500, -200), Sprite.background);
-        handler.addComponent(background);
-
         title = new UISprite(new Vector2i(Main.WIDTH / 2 - 374 / 2 - 80, -20), Sprite.title);
         handler.addComponent(title);
 
@@ -49,11 +40,8 @@ public class MenuUI {
     }
 
     public void render(Screen screen) {
+        screen.drawImage(Sprite.background, -400, -200);
         handler.render(screen);
-    }
-
-    public void addButton(UIButton b) {
-        handler.addComponent(b);
     }
 
     public void addLabel(UILabel l) {

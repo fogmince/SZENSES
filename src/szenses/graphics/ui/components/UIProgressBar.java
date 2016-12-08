@@ -30,11 +30,23 @@ public class UIProgressBar extends UIComponent {
         screen.drawRect(foreground, position.x, position.y, (int) (progress * size.x), size.y);
     }
 
+    public void update() {
+        if(progress < 0.4) setColor(Color.GREEN);
+        else if(progress >= 0.4 && progress < 0.7) setColor(Color.YELLOW);
+        else setColor(Color.RED);
+    }
+
     public void setProgress(double progress) {
         if(progress < 0.0 || progress > 1.0) {
-            throw new RangeException(RangeException.BAD_BOUNDARYPOINTS_ERR, "Progress must be between 0.0 and 1.0");
+            progress = 1;
+            System.err.println("Progress out of range Set to 1");
         }
 
         this.progress = progress;
+    }
+
+    public UIComponent setColor(Color color) {
+        this.foreground = color;
+        return this;
     }
 }

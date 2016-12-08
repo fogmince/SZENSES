@@ -22,13 +22,12 @@ public class Sprite {
     public static final Sprite iconStar = new Sprite(icon_path + "star");
     public static final Sprite iconHelp = new Sprite(icon_path + "help");
     public static final Sprite iconArrows = new Sprite(icon_path + "arrow");
+    public static final Sprite iconArrowLeft = new Sprite(icon_path + "arrow_left");
     public static final Sprite iconA = new Sprite(icon_path + "A");
     public static final Sprite iconB = new Sprite(icon_path + "B");
 
     public static final Sprite title = new Sprite(ui_path + "1234");
     public static final Sprite background = new Sprite(ui_path + "backgruond");
-
-
 
     private String path;
     private int width, height;

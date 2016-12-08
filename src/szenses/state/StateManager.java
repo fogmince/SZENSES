@@ -12,6 +12,7 @@ public class StateManager {
 
     public static final int MENU_STATE = 0;
     public static final int SEARCH_STATE = 1;
+    public static final int MAP_STATE = 2;
 
     public StateManager() {
         states.add(new MenuState(this));

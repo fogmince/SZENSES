@@ -1,6 +1,7 @@
 package szenses.state;
 
 import szenses.graphics.*;
+import szenses.graphics.ui.*;
 
 public abstract class State {
 

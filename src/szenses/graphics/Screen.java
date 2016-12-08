@@ -21,6 +21,11 @@ public class Screen {
         g.fillRect(x, y, width, height);
     }
 
+    public void drawEmtyRect(Color color, int x, int y, int width, int height) {
+        g.setColor(color);
+        g.drawRect(x, y, width, height);
+    }
+
     public void drawText(String text, int x, int y, Font font, Color color) {
         g.setFont(font);
         g.setColor(color);
@@ -32,13 +37,6 @@ public class Screen {
         g.drawImage(sprite.getSprite(), x, y, null);
     }
 
-    public void renderBackgroundPaint(GradientPaint gp) {
-        Graphics2D g2 = (Graphics2D) g;
-
-        g2.setPaint(gp);
-
-        g2.fillRect(0, 0, Main.WIDTH, Main.HEIGHT);
-    }
 
     public void clear() {
         g.setColor(Color.black);

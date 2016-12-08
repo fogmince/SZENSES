@@ -5,7 +5,6 @@ import szenses.graphics.*;
 import szenses.graphics.ui.MenuUI;
 import szenses.graphics.ui.components.UIButton;
 import szenses.graphics.ui.components.UILabel;
-import szenses.graphics.ui.components.UISprite;
 import szenses.util.Vector2i;
 
 import java.awt.*;

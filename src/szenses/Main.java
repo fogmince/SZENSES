@@ -64,7 +64,7 @@ public class Main extends Canvas implements Runnable {
                 if(System.currentTimeMillis() - timer > 1000) {
                     timer += 1000;
                     System.out.println("Updates: " + updates + ", FPS: " + frames);
-                    frame.setTitle(TITLE + "  |  Updates: " + updates + ", FPS:" + frames);
+                    //frame.setTitle(TITLE + "  |  Updates: " + updates + ", FPS:" + frames);
                     updates = 0;
                     frames = 0;
                 }

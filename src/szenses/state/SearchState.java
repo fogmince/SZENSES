@@ -30,6 +30,7 @@ public class SearchState extends State {
         search = new UIButton(Sprite.search, new Vector2i(Main.WIDTH / 2 - 450 / 2 - 10, 440));
         ui.addButton(search);
 
+        map = new UIButton(Sprite.map, new Vector2i(Main.WIDTH / 2 - 460 / 2 - 5, 520));
     }
 
     public void update() {
@@ -37,7 +38,12 @@ public class SearchState extends State {
 
         if(back.isClicked()) sm.setState(StateManager.MENU_STATE);
 
-        if(search.isClicked()) ui.search();
+        if(search.isClicked()) {
+            ui.search();
+            ui.addButton(map);
+        }
+
+        //if(map.isClicked()) sm.setState(StateManager.MAP_STATE);
     }
 
     public void render(Screen screen) {
