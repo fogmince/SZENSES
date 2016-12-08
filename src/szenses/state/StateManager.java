@@ -11,9 +11,11 @@ public class StateManager {
     private int currentState;
 
     public static final int MENU_STATE = 0;
+    public static final int SEARCH_STATE = 1;
 
     public StateManager() {
         states.add(new MenuState(this));
+        states.add(new SearchState(this));
 
         currentState = MENU_STATE;
         states.get(currentState).init();

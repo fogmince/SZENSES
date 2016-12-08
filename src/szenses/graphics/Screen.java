@@ -4,6 +4,8 @@ import szenses.*;
 
 import java.awt.*;
 
+import static szenses.Main.SCALE;
+
 public class Screen {
 
     private int xOffset, yOffset;
@@ -30,7 +32,7 @@ public class Screen {
         g.drawImage(sprite.getSprite(), x, y, null);
     }
 
-    public void renderBackgruondPaint(GradientPaint gp) {
+    public void renderBackgroundPaint(GradientPaint gp) {
         Graphics2D g2 = (Graphics2D) g;
 
         g2.setPaint(gp);

@@ -9,13 +9,24 @@ public class Sprite {
 
     private static final String button_path = "/textures/ui/button/";
     private static final String icon_path = "/textures/ui/icon/";
+    private static final String ui_path = "/textures/ui/";
 
     // UI
-    public static final Sprite buttonTest = new Sprite(button_path + "button");
+    public static final Sprite button = new Sprite(button_path + "button");
+    public static final Sprite buttonBack = new Sprite(button_path + "back_button");
+    public static final Sprite search = new Sprite(button_path + "search_button");
+    public static final Sprite map = new Sprite(button_path + "map_button");
 
     public static final Sprite iconGlass = new Sprite(icon_path + "glass");
     public static final Sprite iconGear = new Sprite(icon_path + "gear");
-    public static final Sprite iconstar = new Sprite(icon_path + "star");
+    public static final Sprite iconStar = new Sprite(icon_path + "star");
+    public static final Sprite iconHelp = new Sprite(icon_path + "help");
+    public static final Sprite iconArrows = new Sprite(icon_path + "arrow");
+    public static final Sprite iconA = new Sprite(icon_path + "A");
+    public static final Sprite iconB = new Sprite(icon_path + "B");
+
+    public static final Sprite title = new Sprite(ui_path + "1234");
+    public static final Sprite background = new Sprite(ui_path + "backgruond");
 
 
 
